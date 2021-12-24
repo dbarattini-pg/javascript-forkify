@@ -1,0 +1,21 @@
+{
+  "name": "forkify",
+  "author": "Daniel Barattini",
+  "version": "1.0.0",
+  "description": "Recipe Application",
+  "default": "index.html",
+  "license": "MIT",
+  "scripts": {
+    "start:dev": "yarn parcel index.html",
+    "build": "yarn parcel build index.html --dist-dir ./dist"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.0.1",
+    "parcel": "^2.0.1"
+  },
+  "dependencies": {
+    "core-js": "^3.19.3",
+    "fraction.js": "^4.1.2",
+    "regenerator-runtime": "^0.13.9"
+  }
+}
