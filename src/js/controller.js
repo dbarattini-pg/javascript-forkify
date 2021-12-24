@@ -76,6 +76,10 @@ async function controlAddRecipe(recipe) {
   }
 }
 
+function printWelcomeMessage() {
+  console.log('Welcome to the application!');
+}
+
 function init() {
   // pub-sub pattern
   recipeView.addRenderEventListener(controlRecipes);
@@ -84,6 +88,7 @@ function init() {
   recipeView.addServingsEventListener(controlServings);
   recipeView.addBookmarkToogleListener(controlBookmarkToogle);
   addRecipeView.addUploadListener(controlAddRecipe);
+  printWelcomeMessage();
 }
 
 init();
